@@ -30,7 +30,7 @@
         <div class="row no-gutters">
           <img src="{{ article.image }}" class="card-img-top" alt="{{ article.title }}" />
           <div class="card-body ml-3">
-            <h3 class="card-title">{{ article.title }}</h3>
+            <h3 class="card-title">{{ article.title|safe }}</h3>
             <p class="card-text">{{ article.description|safe }}</p>
             <a href="{{ article.link }}">
               <p class="card-text">View this article</p>

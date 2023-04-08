@@ -4,7 +4,7 @@ from .models import Article
 from django.urls.base import reverse
 
 
-class PodCastsTests(TestCase):
+class FeedsTests(TestCase):
     def setUp(self):
         self.article = Article.objects.create(
             title="Some random article",

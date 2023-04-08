@@ -14,7 +14,7 @@ from django_apscheduler.jobstores import DjangoJobStore
 from django_apscheduler.models import DjangoJobExecution
 
 # Models
-from podcasts.models import Article
+from feeds.models import Article
 from dateutil.tz import gettz
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
@@ -82,7 +82,7 @@ def save_new_articles(feed):
 
 
 def fetch_nature():
-    """Fetches new episodes from RSS for Nature Materials."""
+    """Fetches new episodes from RSS for Nature."""
     _feed = feedparser.parse("https://www.nature.com/nature.rss")
     save_new_articles(_feed)
 
