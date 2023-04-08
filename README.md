@@ -35,6 +35,19 @@ python -m pip install -r requirements.txt
 
 ## 🧑‍💻 Running the app
 
+- Generate a django secret key
+
+```zsh
+python manage.py shell
+```
+
+```python
+from django.core.management.utils import get_random_secret_key
+print(get_random_secret_key())
+```
+
+Save the key to a file called .env at the root of the project
+
 - Create an admin user so that you can manage your DB/jobs from /admin
 ```zsh
 python manage.py createsuperuser
