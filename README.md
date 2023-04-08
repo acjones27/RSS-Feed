@@ -5,7 +5,7 @@
 
 An RSS Feed built from scratch using Python and Django 
 
-![Example Homepage](/preview.png?raw=true "Example Homepage")
+![Example Homepage](/screenshots/preview.png?raw=true "Example Homepage")
 
 
 ## 🔥 Functionality
